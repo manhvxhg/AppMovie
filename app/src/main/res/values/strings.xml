@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Movie</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="movies_title">Movies</string>
+    <string name="favourite_title">Favourite</string>
+    <string name="setting_title">Settings</string>
+    <string name="about_title">About</string>
+    <string name="movie_detail_rating">Rating</string>
+    <string name="movie_detail_releasedate">Release Date</string>
+    <string name="movie_detail_overview">Overview</string>
+    <string name="movie_detail_reminder">Reminder</string>
+    <string name="movie_detail_castcrew"><![CDATA[Cast & Crew]]></string>
+    <string name="action_search">Search</string>
+    <string name="nav_button_title_show_all">Show All</string>
+    <string name="edit_profile_item_camera">Camera</string>
+    <string name="edit_profile_item_gallery">Gallery</string>
+    <string name="title_item_delete">Delete</string>
+    <string name="title_item_cancel">Cancel</string>
+</resources>

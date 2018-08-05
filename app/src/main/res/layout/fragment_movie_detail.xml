@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:layout_editor_absoluteX="@dimen/dp_8"
+    tools:layout_editor_absoluteY="@dimen/dp_8">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/colorBackground"
+            android:clickable="true">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_60"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_4"
+                android:layout_marginEnd="@dimen/dp_6"
+                android:layout_marginRight="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_4"
+                app:cardCornerRadius="@dimen/dp_4"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/cardviewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/rating_detail_txt"
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_4"
+                        android:layout_marginEnd="@dimen/dp_8"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginRight="@dimen/dp_8"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:text="7.0/10.0"
+                        android:textColor="@color/pink"
+                        android:textSize="@dimen/sp_12"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toRightOf="@+id/textView6"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/favourite_icon_img"
+                        android:layout_width="@dimen/dp_42"
+                        android:layout_height="@dimen/dp_0"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:layout_marginTop="@dimen/dp_8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@mipmap/ic_star_border_black"
+                        tools:layout_constraintLeft_creator="1"
+                        tools:layout_constraintTop_creator="1" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_4"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:text="@string/movie_detail_rating"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_12"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/favourite_icon_img" />
+
+                    <TextView
+                        android:id="@+id/release_date_detail_txt"
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_100"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_100"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:text="2015-06-12"
+                        android:textColor="@color/pink"
+                        android:textSize="@dimen/sp_12"
+                        app:layout_constraintHorizontal_bias="0.466"
+                        app:layout_constraintLeft_toRightOf="@+id/textView2"
+                        app:layout_constraintRight_toRightOf="@+id/card_view"
+                        app:layout_constraintTop_toTopOf="@+id/card_view" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:text="@string/movie_detail_releasedate"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_12"
+                        app:layout_constraintLeft_toRightOf="@+id/favourite_icon_img"
+                        app:layout_constraintTop_toTopOf="@+id/card_view" />
+
+                    <ImageView
+                        android:id="@+id/adult_detail_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:layout_marginEnd="@dimen/dp_8"
+                        android:layout_marginRight="@dimen/dp_8"
+                        android:layout_marginTop="@dimen/dp_8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_adult" />
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/poster_detail_img"
+                android:layout_width="@dimen/dp_110"
+                android:layout_height="@dimen/dp_120"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_view"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="@string/movie_detail_overview"
+                android:textColor="@color/pink"
+                android:textStyle="bold|italic"
+                app:layout_constraintLeft_toRightOf="@+id/poster_detail_img"
+                app:layout_constraintTop_toBottomOf="@+id/card_view" />
+
+            <TextView
+                android:id="@+id/overview_detail_txt"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_8"
+                android:scrollbars = "vertical"
+
+                android:text="Eggsy (Taron Egerton) and Roxy (Sophie Cookson) return to action with the rest of Kingsmen when their headquarters is destroyed by a villainous corporation known as the Golden Circle. Faced with the challenge of defeating a formidable opponent with no home base, the Kingsmen discover an allied organization of spies called Statesman, whose cooperation reaches back to the founding of their own agency. The two groups must join forces to save the world in this sequel directed by Matthew Vaughn."
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintLeft_toRightOf="@+id/poster_detail_img"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <Button
+                android:id="@+id/reminder_detail_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_marginStart="@dimen/dp_24"
+
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/shape_button_custom"
+                android:text="@string/movie_detail_reminder"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/poster_detail_img" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@string/movie_detail_castcrew"
+                android:textColor="@color/pink"
+                android:textStyle="bold|italic"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reminder_detail_btn" />
+
+            <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                card_view:cardCornerRadius="@dimen/dp_8"
+                card_view:cardElevation="@dimen/dp_8"
+                card_view:layout_constraintHorizontal_bias="0.498"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_cast_crew"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/layer_list_recyclerview_background"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintVertical_bias="0.0"></android.support.v7.widget.RecyclerView>
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+</LinearLayout>

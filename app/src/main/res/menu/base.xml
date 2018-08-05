@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/change_view_actionbar"
+        android:icon="@mipmap/ic_grid_on_white"
+        android:orderInCategory="100"
+        android:title="Change Your View"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/action_search"
+        android:visible="false"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/movies_actionbar"
+        android:orderInCategory="100"
+        android:title="@string/movies_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/favourite_actionbar"
+        android:orderInCategory="100"
+        android:title="@string/favourite_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/setting_actionbar"
+        android:orderInCategory="100"
+        android:title="@string/setting_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about_actionbar"
+        android:orderInCategory="100"
+        android:title="@string/about_title"
+        app:showAsAction="never" />
+</menu>

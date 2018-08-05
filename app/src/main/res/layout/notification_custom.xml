@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/notification_logo"
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_64"
+        android:layout_margin="@dimen/dp_4"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/notification_content"
+        android:layout_alignLeft="@+id/notification_content"
+        android:layout_alignStart="@+id/notification_content"
+        android:text="Movie Title"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/notification_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/notification_logo"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_toEndOf="@+id/notification_logo"
+        android:layout_toRightOf="@+id/notification_logo"
+        android:text="Lord Voldemort"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/notification_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/notification_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:text="4:07 PM"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/sp_10" />
+</RelativeLayout>

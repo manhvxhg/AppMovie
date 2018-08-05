@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key = "preference_key"
+
+    >
+    <android.support.v7.preference.PreferenceCategory
+        android:key="pref_category_filter"
+        android:title="FILTER" >
+        <android.support.v7.preference.ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="Category"
+            android:summary="%s"
+            android:entries="@array/item_category"
+            android:entryValues="@array/item_entries_value"
+            android:key="category_key"
+            android:title="Category" />
+        <android.support.v7.preference.SeekBarPreference
+            android:key="rate_key"
+            android:title="Movie with rate from"
+            android:max="10"
+            android:defaultValue="0" />
+        <EditTextPreference
+            android:dialogTitle="From Release year"
+            android:key="edittext_from_release_year "
+            android:title="From Release year"
+            />
+    </android.support.v7.preference.PreferenceCategory>
+    <android.support.v7.preference.PreferenceCategory
+        android:key="pref_category_sort"
+        android:title="SORT"
+        >
+        <android.support.v7.preference.ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="Sort By"
+            android:summary="%s"
+            android:entries="@array/item_sort_by"
+            android:entryValues="@array/item_entries_sort_by"
+            android:key="sort_key"
+            android:title="Sort By" />
+    </android.support.v7.preference.PreferenceCategory>
+</PreferenceScreen>
